@@ -21,8 +21,8 @@ public class DataConstructor implements DataConstructorInterface {
 
     private Daily generateDaily(){
         Daily newDaily = new Daily();
-        newDaily.repeatHostnames = 0;
-        newDaily.totalHostnames = 0;
+        newDaily.totalUniqueHostnames = 0;
+        newDaily.todayUniqueHostnames = 0;
         Set<String> repeats = new HashSet<>();
         repeats.add(s3Helper.getHostname());
         newDaily.repeats = repeats;
