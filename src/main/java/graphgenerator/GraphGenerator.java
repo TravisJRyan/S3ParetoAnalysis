@@ -27,15 +27,14 @@ public class GraphGenerator {
         System.out.println("Generating dailies...");
         Daily[] dailies = dataConstructor.generateDailies();
         System.out.println("Dailies generated!");
-        int numHostnames = dataConstructor.totalHostnames();
-        System.out.format("Encountered %d unique hostnames.\n", numHostnames);
+        int totalHostnames = dataConstructor.totalHostnames();
+        System.out.format("Encountered %d unique hostnames.\n", totalHostnames);
         System.out.format("Generating static files in %s.\n", outputDirectory.toAbsolutePath());
         staticFileGenerator.generateStaticFiles(outputDirectory);
         System.out.println("Static files generated.");
         System.out.format("Generating json file in %s.\n", outputDirectory.toAbsolutePath());
-        jsonFileGenerator.generateJson(dailies, outputDirectory);
+        jsonFileGenerator.generateJson(dailies, totalHostnames, outputDirectory);
         System.out.println("Json file generated.");
         System.out.format("Pareto chart available in %s.\n", outputDirectory.toAbsolutePath());
-
     }
 }
