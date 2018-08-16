@@ -1,17 +1,18 @@
 package graphgenerator
 
 import java.io.{FileOutputStream, OutputStream}
-import java.nio.file.{Path, Paths}
+import java.nio.file.Path
 
 import org.json4s.JsonAST._
 import org.json4s.JsonDSL._
+import org.json4s.jackson.JsonMethods._
 import DataConstuctor.Daily
 
 class JsonFileGenerator(jsonFileName: String) {
 
   def generateJson(dailies: Array[Daily], totalHostnames: Int, outputDirectory: Path): Unit = {
     val outputStream: OutputStream = getOutputStream(outputDirectory)
-    outputStream.write(buildJson(dailies, totalHostnames).toString.getBytes("UTF-8"))
+    outputStream.write(pretty(render(buildJson(dailies, totalHostnames))).getBytes)
     outputStream.flush()
     outputStream.close()
   }

@@ -1,4 +1,5 @@
 import DataConstuctor.Daily;
+import DataConstuctor.DataConstructor;
 import graphgenerator.JsonFileGenerator;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +15,7 @@ public class JsonFileGeneratorTest {
     private JsonFileGenerator jsonFileGenerator;
 
     @Before
-    private void setup() {
+    public void setup() {
         mockOutputDirectory.toFile().mkdirs();
         if(mockJsonFilePath.toFile().exists()) {
             mockJsonFilePath.toFile().delete();
@@ -25,8 +26,19 @@ public class JsonFileGeneratorTest {
     @Test
     public void testGenerateEmptyDailies() {
         Daily[] dailies = new Daily[0];
-        int totalHostnames = 6;
+        int totalHostnames = 0;
         jsonFileGenerator.generateJson(dailies, totalHostnames, mockOutputDirectory);
     }
 
+    @Test
+    public void testGenerateDailies() {
+        Daily d1 = new Daily();
+        Daily d2 = new Daily();
+        d1.todayUniqueHostnames = 27;
+        d1.totalUniqueHostnames = 27;
+        d2.todayUniqueHostnames = 3;
+        d2.totalUniqueHostnames = 30;
+        int totalHostnames = 30;
+        jsonFileGenerator.generateJson(new Daily[]{d1, d2}, totalHostnames, mockOutputDirectory);
+    }
 }
