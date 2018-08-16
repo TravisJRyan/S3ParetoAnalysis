@@ -3,7 +3,7 @@ package DataConstuctor;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DataConstructor {
+public class DataConstructor implements DataConstructorInterface {
 
     Daily[] allDailies;
     S3Helper s3Helper;
@@ -14,9 +14,8 @@ public class DataConstructor {
     }
 
     public Daily[] generateDailies(){
-        for(int i = 0; i < allDailies.length; i++){
+        for(int i = 0; i < allDailies.length; i++)
             allDailies[i] = generateDaily();
-        }
         return allDailies;
     }
 
@@ -26,7 +25,12 @@ public class DataConstructor {
         newDaily.totalHostnames = 0;
         Set<String> repeats = new HashSet<>();
         repeats.add(s3Helper.getHostname());
+        newDaily.repeats = repeats;
         return newDaily;
+    }
+
+    public int totalHostnames(){
+        return 1;
     }
 
 }
