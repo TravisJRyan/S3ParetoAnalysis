@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aaf6c15-dad1-46ba-9871-dd7b7b900d49" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataConstuctor/Daily.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructorInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataConstuctor/S3Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/connortravis_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/connortravis_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructorDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -62,25 +58,46 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructorInterface.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataConstructor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataConstructor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
+            <state relative-caret-position="420">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="S3Helper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/S3Helper.java">
+      <file leaf-file-name="DataConstructorDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructorDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="S3Helper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/S3Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding>
                 <element signature="e#80#81#0" expanded="true" />
                 <element signature="e#104#105#0" expanded="true" />
@@ -93,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/Daily.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -414,6 +431,8 @@
         <option value="$PROJECT_DIR$/src/main/java/DataConstructorInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructorInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataConstuctor/S3Helper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructorDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructor.java" />
       </list>
     </option>
   </component>
@@ -501,7 +520,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DataConstructorDriver">
+    <configuration name="DataConstructorDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataConstuctor.DataConstructorDriver" />
+      <module name="connortravis_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataConstuctor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -618,8 +648,13 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.S3ParetoAnalysis [assemble]" />
+      <item itemvalue="Application.DataConstructorDriver" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DataConstructorDriver" />
         <item itemvalue="Gradle.S3ParetoAnalysis [assemble]" />
       </list>
     </recent_temporary>
@@ -634,12 +669,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534432543201</updated>
-      <workItem from="1534432547383" duration="877000" />
+      <workItem from="1534432547383" duration="1482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="877000" />
+    <option name="totallyTimeSpent" value="1482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="2554" height="1302" extended-state="0" />
@@ -659,13 +694,14 @@
       <window_info id="UI Designer" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32980457" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32980457" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32980457" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980423" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980423" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" />
       <window_info id="Learn" />
       <window_info anchor="right" id="Gradle" visible="true" weight="0.32967892" />
@@ -722,34 +758,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/Daily.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/S3Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="e#80#81#0" expanded="true" />
+            <element signature="e#104#105#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructorInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/Daily.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructorDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/DataConstructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataConstuctor/S3Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="420">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding>
-            <element signature="e#80#81#0" expanded="true" />
-            <element signature="e#104#105#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
