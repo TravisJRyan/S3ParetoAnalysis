@@ -33,7 +33,7 @@ public class GraphGenerator {
         staticFileGenerator.generateStaticFiles(outputDirectory);
         System.out.println("Static files generated.");
         System.out.format("Generating json file in %s.\n", outputDirectory.toAbsolutePath());
-        jsonFileGenerator.generateJson(outputDirectory);
+        jsonFileGenerator.generateJson(dailies, outputDirectory);
         System.out.println("Json file generated.");
         System.out.format("Pareto chart available in %s.\n", outputDirectory.toAbsolutePath());
 
