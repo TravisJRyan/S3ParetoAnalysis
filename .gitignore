@@ -1,3 +1,5 @@
-.gradel
+.gradle
 build
 .idea
+.gradle
+.DS_Store
