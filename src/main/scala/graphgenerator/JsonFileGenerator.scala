@@ -3,10 +3,10 @@ package graphgenerator
 import java.io.{FileOutputStream, OutputStream}
 import java.nio.file.Path
 
+import DataConstuctor.Daily
 import org.json4s.JsonAST._
 import org.json4s.JsonDSL._
 import org.json4s.jackson.JsonMethods._
-import DataConstuctor.Daily
 
 class JsonFileGenerator(jsonFileName: String) {
 

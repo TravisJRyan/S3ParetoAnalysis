@@ -1,6 +1,7 @@
 
 plugins {
     id 'java'
+    id 'scala'
     id "io.spring.dependency-management" version "1.0.6.RELEASE"
 }
 
@@ -19,4 +20,12 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     // https://mvnrepository.com/artifact/org.json4s/json4s-native
     compile group: 'org.json4s', name: 'json4s-native_2.12', version: '3.6.0'
+    // https://mvnrepository.com/artifact/org.json4s/json4s-jackson
+    compile group: 'org.json4s', name: 'json4s-jackson_2.12', version: '3.6.0'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-core
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.21.0'
+
+
 }
